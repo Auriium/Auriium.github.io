@@ -12,6 +12,8 @@
 </head>
 <body>
     <div class = "main">
+        
+        
         <!-- Navigation bar !-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
@@ -21,25 +23,29 @@
                     <ul class="navbar-nav ms-auto">
                         
                         <!-- list element !-->
-                        <li class="nav-item px-3">
-                            <a class="nav-link" aria-current="page" href="#">Home</a>
+                        <li class="nav-item px-3 py-3">
+                            <a class="nav-link" aria-current="location" href="#Home">Home</a>
                         </li>
-                        <li class="nav-item px-3">
-                            <a class="nav-link" aria-current="page" href="#">About Me</a>
+                        <li class="nav-item px-3 py-3">
+                            <a class="nav-link" aria-current="location" href="#Skills">About Me</a>
                         </li>
                         
-                        <li class="nav-item dropdown px-3">
+                        <li class="nav-item dropdown px-3 py-3">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 My Portfolio
                             </a>
                             <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">My Employers</a></li>
-                                <li><a class="dropdown-item" href="#">My Projects</a></li>
+                                <li><a class="dropdown-item" href="#Collaborations">Collaborations</a></li>
+                                <li><a class="dropdown-item" href="#Projects">Projects</a></li>
                             </ul>
                         </li>
     
-                        <li class="nav-item px-3">
-                            <a class="nav-link" aria-current="page" href="#">Other Stuff</a>
+                        <li class="nav-item px-3 py-3">
+                            <a class="nav-link" aria-current="location" href="#Contacts">Contact</a>
+                        </li>
+                        
+                        <li class="nav-item px-3 py-2">
+                            <a class="nav-link" aria-current="location" href="https://github.com/Auriium"><img height=40 width=40 src="images/pngegg.png"></a>
                         </li>
                         
                     </ul>
@@ -48,6 +54,8 @@
         </nav>
         
         <main class="container">
+            
+            <!-- Hello, I'm Matt !-->
             <div class="px-5 py-5 pt-md-5 pb-md-4 mx-5 my-2 text-center" id="Home">
                 <h1 class="display-2 mb-4">Hi, I'm Matt</h1>
                 <p class="lead">I'm an aspiring software developer, a music producer, a tech enthusiast, and a proud cat owner!</p>
@@ -58,80 +66,294 @@
     
             <hr class="featurette-divider my-3">
     
-            <div class="px-4 py-4 pt-md-5 pb-md-4 mx-5 my-2 text-center">
-                <h1 class="display-2 mb-4">My skills</h1>
+            <!-- Skills !-->
+            <div class="px-4 py-4 pt-md-3 pb-md-3 mx-5 my-2" id="Skills">
+                <h1 class="display-2 pb-4 text-center">My skills</h1>
     
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">Knowledge of Programming Languages</h4>
+                    <div class="card-header bg-dark">
+                        <h4 class="my-0 fw-normal text-white">Programming Languages</h4>
                     </div>
-                    <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-3">
-                            <li>10 users included</li>
-                            <li>2 GB of storage</li>
-                            <li>Email support</li>
-                            <li>Help center access</li>
-                        </ul>
+                    <div class="card-body text-left">
+    
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Knowledge</th>
+                                <th scope="col">Language</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>Java</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>C#</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h4>JS</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h4>HTML</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h4>CSS</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-danger">Want to Learn</td>
+                                <td class="table-light"><h4>C++</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-danger">Want to Learn</td>
+                                <td class="table-light"><h4>C</h4></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        
                     </div>
                 </div>
     
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">General Development Environment Skills</h4>
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="my-0 fw-normal">Development Concepts</h4>
                     </div>
                     <div class="card-body">
-                    
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Knowledge</th>
+                                <th scope="col">Skill</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>Shell/Bash/Batch</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>Git VCS with GitHub</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>CI/CD (Continuous Integration and Deployment)</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>Maven and Gradle build / depend systems</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h4>SQL and NoSQL Data Storage (MariaDB, Mysql, Postgres, H2, and SQLite)</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h4>Linux SysAdmin</h4></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h4>Unit testing (Junit)</h4></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
     
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header">
-                        <h4 class="my-0 fw-normal">Coding Languages</h4>
+                    <div class="card-header bg-dark text-white">
+                        <h4 class="my-0 fw-normal">Team Skills</h4>
                     </div>
                     <div class="card-body">
-                    
+                        <table class="table">
+                            <thead>
+                            <tr>
+                                <th scope="col">Knowledge</th>
+                                <th scope="col">Skill</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h5>Collaborating with other developers</h5></td>
+                            </tr>
+                            <tr>
+                                <td class="table-success">Experienced</td>
+                                <td class="table-light"><h5>Writing code to a strict deadline</h5></td>
+                            </tr>
+                            <tr>
+                                <td class="table-warning">Learning</td>
+                                <td class="table-light"><h5>Working with other developers in a live environment</h5></td>
+                            </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
     
+            <hr class="featurette-divider my-3">
             
+            <!-- Projects !-->
+            
+            <div id="Projects">
+                <h1 class="display-2 pb-4 text-center">My Main Projects</h1>
+    
+                <div class="container my-2 px-5 py-4 border shadow rounded py-3">
+                    <div class="row justify-content-start">
+            
+                        <div class="col-9">
+                            <h2 class>Beetle <span class="text-muted">(Plugin Framework)</span></h2>
+                            <p class="lead">Beetle is a collection of powerful centralized utilities meant to help with quickly making plugins and code.</p>
+                
+                            <h3>Features</h3>
+                            <ul class="lead">
+                                <li>Easy transactional SQL</li>
+                                <li>Easy service registry and versioning</li>
+                                <li>Base for command registration</li>
+                                <li>Base for file registration and producing</li>
+                                <li>Base for runnable executing</li>
+                            </ul>
+                
+                            <a type="button" class="btn btn-secondary btn-lg" href="https://github.com/Auriium/Beetle">GitHub</a>
+            
+                        </div>
+                        <div class="col-3">
+                            <img src="images/beetol.png" class="img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500" ><rect width="100%" height="100%" fill="#eee"></rect>
+                        </div>
+        
+                    </div>
+                </div>
+    
+                <div class="container my-2 px-5 py-4 border shadow rounded py-3">
+                    <div class="row justify-content-start">
+            
+                        <div class="col-9">
+                            <h2 class>Branch <span class="text-muted">(Command Framework)</span></h2>
+                            <p class="lead">An easy to use yet very powerful command framework</p>
+                
+                            <p class="lead">Branch is based around the concept of a "Node" and has context aware suggestions, annotation and builder format command construction, and multiple node types.</p>
+                
+                            <p class="lead">Branch is built around the Beetle framework but can be used independently of it</p>
+                
+                            <a type="button" class="btn btn-secondary btn-lg" href="https://github.com/Auriium/Branch">GitHub</a>
+            
+                        </div>
+                        <div class="col-3">
+                            <img src="images/branch.png" class="img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500" ><rect width="100%" height="100%" fill="#eee"></rect>
+                        </div>
+        
+                    </div>
+                </div>
+    
+                <div class="container my-2 px-5 py-4 border shadow rounded py-3">
+                    <div class="row justify-content-start">
+            
+                        <div class="col-9">
+                            <h2 class>Gears <span class="text-muted">(Configuration System)</span></h2>
+                            <p class="lead">Gears is a Beetle extension that allows for adaptable configuration and data storage/serialization</p>
+                
+                            <h3>Features</h3>
+                            <ul class="lead">
+                                <li>Individual configuration parsers per object</li>
+                                <li>Node based approach wrapped with a dynamic proxy to ensure type guarantee</li>
+                                <li>Easy for beginners, powerful enough for specific tasks</li>
+                                <li>Hella opinionated and I don't care</li>
+                            </ul>
+                
+                            <a type="button" class="btn btn-secondary btn-lg" href="https://github.com/Auriium/Gears">GitHub</a>
+            
+                        </div>
+                        <div class="col-3">
+                            <img src="images/gears.jpg" class="img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500" ><rect width="100%" height="100%" fill="#eee"></rect>
+                        </div>
+        
+                    </div>
+                </div>
+    
+                <div class="container my-2 px-5 py-4 border shadow rounded py-3">
+                    <div class="row justify-content-start">
+            
+                        <div class="col-9">
+                            <h2 class>Tick <span class="text-muted">(Temporary Database Maven Plugin)</span></h2>
+                            <p class="lead">Tick is a docker-delegating maven plugin used to set up temporary testing databases</p>
+                
+                            <p class="lead">Tick exists to replace TestContainers as a temporary code-generation database, as TestContainers is full of dubious code and hacky reflection calls</p>
+                
+                            <p class="lead">Tick is a maven plugin and comes both in an all in one code generation plugin as well as a simple temporary database start/stop plugin</p>
+                
+                            <a type="button" class="btn btn-secondary btn-lg" href="https://github.com/Auriium/Tick">GitHub</a>
+            
+                        </div>
+                        <div class="col-3">
+                            <img src="images/tick.png" class="img-fluid mx-auto" width="500" height="500" aria-label="Placeholder: 500x500" ><rect width="100%" height="100%" fill="#eee"></rect>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+    
+            <hr class="featurette-divider my-3">
     
             <!-- Employers !-->
-    
             <div class="container my-3">
-                <p class="text-center display-6 my-3">Some of the people I've worked with</p>
+            
             </div>
     
-            <hr class="featurette-divider my-4">
-    
-            <div class="container my-5">
+            <div class="container my-5" id="Collaborations">
+                <h1 class="text-center display-2 my-4 pb-5">Some of the people I've worked with</h1>
+                
                 <div class="row">
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                
-                        <h2>Heading</h2>
-                        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-                    </div><!-- /.col-lg-4 -->
+                        <img src="images/qteamphotorealistic.png" class="rounded-circle" width="140" height="140" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+    
+                        <h2>QTeam Development LLC</h2>
+                        <p>I am one of the two co-owners of QTeam Development, working as the development manager,
+                            and have written and overseen many high-quality Java plugins made for clients there.</p>
+                    </div>
                     <div class="col-lg-4">
-                        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+                        <img src="images/solar.png" class="rounded-circle" width="140" height="140" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
                 
-                        <h2>Heading</h2>
-                        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-                        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-                    </div><!-- /.col-lg-4 -->
+                        <h2>SolarMC Dev Team</h2>
+                        <p>I'm one of the developers on this amazing upcoming minigame server, mainly handling the backend code.</p>
+                    </div>
                     <div class="col-lg-4">
-                        <svg class="rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-                
-                        <h2>Heading</h2>
-                        <p>And lastly this, the third column of representative placeholder content.</p>
-                        <p><a class="btn btn-secondary" href="#">View details »</a></p>
-                    </div><!-- /.col-lg-4 -->
+                        <img src="images/elytraforce.webp" class="rounded-circle" width="140" height="140" role="img" preserveAspectRatio="xMidYMid slice" focusable="false">
+    
+                        <h2>ElytraForce</h2>
+                        <p>I was the lead developer of ElytraForce Networks, a large minigame network focusing on games
+                            that did what other servers did not: innovate! We worked heavily with the Spigot API as well as with SQL and some noSQL data-storage.</p>
+                    </div>
                 </div>
             </div>
+            
+            <!-- Other Info / Contacts !-->
+    
+            <hr class="featurette-divider my-3">
+            
+            <div class="container my-5" id="Contacts">
+                <h1 class="text-center display-2 my-4 pb-3">My Contacts</h1>
+    
+                <div class="d-grid gap-2">
+                    <a class="btn btn-dark text-white" data-bs-toggle="collapse" href="#Discord" role="button" aria-expanded="false" aria-controls="collapseExample">Discord</a>
+    
+                    <div class="collapse" id="Discord">
+                        <div class="card card-body">
+                            Add me at Aesthetik#9784 (Printer Man)
+                        </div>
+                    </div>
+                    
+                    <a class="btn btn-dark text-white" href="https://www.instagram.com/auriui/">Instagram</a>
+                    <a class="btn btn-dark text-white" href="https://github.com/Auriium">Github</a>
+                </div>
+            </div>
+            
         </main>
     
-        <hr class="featurette-divider my-4">
+        <hr class="featurette-divider my-3">
         
     </div>
 
